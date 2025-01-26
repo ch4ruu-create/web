@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.html">
+</head>
+    <style>
+        /* General Page Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(bg5.jpeg);
+    overflow-x: hidden;
+    height: 100%;
+    position: relative;
+}
+
+/* Header */
+.header {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: 10px auto;
+    z-index: 2;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+/* Poster Section */
+.poster-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    animation: slide-in 1.2s ease-in-out;
+}
+
+.poster {
+    height: calc(70vh - 100px); /* Dynamically adjust height */
+    width: auto;
+    border: 5px solid #f294cd;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #2b272a4d;
+    object-fit: cover;
+}
+
+/* Corner Divs */
+.corner-box {
+    position: absolute;
+    width: 25%;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    border: 2px solid #f294cd;
+    font-style: italic;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.corner-box h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #f294cd;
+}
+
+.scrollable-content {
+    max-height: 150px;
+    overflow-y: scroll;
+    padding-right: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #f294cd transparent;
+}
+
+.scrollable-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background-color: #f294cd;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+.buy-now {
+    background-color: #f294cd;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #d689b4;
+    transform: scale(1.1);
+}
+
+/* Corner Box Positions */
+/* Corner Box Positions */
+.top-left {
+            top: 20%;
+            left: 2%;
+        }
+        
+        .top-right {
+            top: 20%;
+            right: 2%;
+        }
+        
+        .bottom-left {
+            bottom: 5%;
+            left: 2%;
+        }
+        
+        .bottom-right {
+            bottom: 5%;
+            right: 2%;
+        }
+        
+
+/* Animation */
+@keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+    </style>
+    <body>
+        <div class="events-page">
+            <!-- Header -->
+            <div class="header">
+                <h1>Taking the World by Storm</h1>
+            </div>
+    
+            <!-- Poster Section -->
+            <div class="poster-container">
+                <img src="Bohemian Rhapsody.jpeg" alt="Queens Poster" class="poster">
+                <div class="concert-dates">
+                </div>
+            </div>
+    
+            <!-- Country Div Boxes -->
+            <div class="countries-container">
+                <div class="corner-box top-left">
+                    <h2>USA</h2>
+                    <div class="scrollable-content">
+                        <p><strong>1.</strong> New York - Madison Square Garden<br>20th April, 7:00 PM</p>
+                        <p><strong>2.</strong> Los Angeles - Hollywood Bowl<br>25th April, 8:00 PM</p>
+                        <p><strong>3.</strong> Chicago - United Center<br>30th April, 6:00 PM</p>
+                        <p><strong>4.</strong> Miami - American Airlines Arena<br>5th May, 7:30 PM</p>
+                        <p><strong>5.</strong> San Francisco - Chase Center<br>10th May, 8:00 PM</p>
+                    </div>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <div class="corner-box top-right">
+                    <h2>Europe</h2>
+                    <div class="scrollable-content">
+                        <p><strong>1.</strong> Paris - Eiffel Arena<br>12th March, 8:00 PM</p>
+                        <p><strong>2.</strong> Berlin - O2 World<br>18th July, 9:00 PM</p>
+                        <p><strong>3.</strong> London - Wembley Stadium<br>15th March, 7:30 PM</p>
+                        <p><strong>4.</strong> Rome - Colosseum Arena<br>20th March, 8:00 PM</p>
+                        <p><strong>5.</strong> Madrid - Palacio Vistalegre<br>25th March, 8:30 PM</p>
+                    </div>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <div class="corner-box bottom-left">
+                    <h2>Asia</h2>
+                    <div class="scrollable-content">
+                        <p><strong>1.</strong> Tokyo - Tokyo Dome<br>5th June, 7:00 PM</p>
+                        <p><strong>2.</strong> Seoul - Olympic Stadium<br>10th June, 7:30 PM</p>
+                        <p><strong>3.</strong> Shanghai - Mercedes-Benz Arena<br>15th June, 8:00 PM</p>
+                        <p><strong>4.</strong> Bangkok - Impact Arena<br>20th June, 7:00 PM</p>
+                        <p><strong>5.</strong> Mumbai - DY Patil Stadium<br>25th June, 8:30 PM</p>
+                    </div>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+                <div class="corner-box bottom-right">
+                    <h2>Australia</h2>
+                    <div class="scrollable-content">
+                        <p><strong>1.</strong> Sydney - Opera House<br>15th August, 7:30 PM</p>
+                        <p><strong>2.</strong> Melbourne - MCG<br>20th August, 8:00 PM</p>
+                        <p><strong>3.</strong> Brisbane - Suncorp Stadium<br>25th August, 8:30 PM</p>
+                        <p><strong>4.</strong> Perth - RAC Arena<br>30th August, 7:00 PM</p>
+                        <p><strong>5.</strong> Adelaide - Entertainment Centre<br>5th September, 8:00 PM</p>
+                    </div>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

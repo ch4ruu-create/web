@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.html">
+</head>
+    <title>Blog Page</title>
+    <style>
+        /* General Page Styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, rgb(236, 172, 210), hsl(321, 45%, 48%));
+            background-size: 400% 400%;
+            animation: gradient 8s ease infinite;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 20px;
+            margin: 10px auto;
+        }
+
+        .header h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            background:  black;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Blog Section */
+        .blog-container {
+            margin: 30px auto;
+            max-width: 1000px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .blog-container:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .blog-container h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .blog-content {
+            line-height: 1.8;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Ticket Section */
+        .ticket-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .ticket-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .ticket-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .ticket-button:hover {
+            background-color: #e05656;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            margin-top: 50px;
+        }
+
+        .footer a {
+            color: hsl(0, 0%, 0%);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1>Latest News & Updates</h1>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="blog-container">
+        <h2>Welcome to the Blog</h2>
+        <p class="blog-content">
+            Stay updated with the latest news about our concerts and events happening worldwide! From exciting behind-the-scenes stories to updates about our upcoming shows, this blog is your one-stop destination for all things [Your Website Name]. 
+        </p>
+        <p class="blog-content">
+            Our journey has been a whirlwind of incredible music, unforgettable performances, and amazing fans like you. This year, we’re bringing even more electrifying concerts to your city. Check out our event calendar, and don’t forget to grab your tickets before they’re gone!
+        </p>
+    </div>
+
+    <!-- Ticket Section -->
+    <div class="ticket-section">
+        <h2>Ready to Join Us?</h2>
+        <button class="ticket-button">Buy Tickets Now</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 [Your Website Name]. All Rights Reserved.</p>
+        <p>Follow us on 
+            <a href="#">Instagram</a>, 
+            <a href="#">Facebook</a>, and 
+            <a href="#">Twitter</a>.
+        </p>
+    </div>
+</body>
+</html>
